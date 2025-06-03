@@ -164,6 +164,7 @@ For any questions, feedback, or support, please contact [Washer](mailto:your.ema
 <a href="https://github.com/Washer72/BuildButler/releases/download/V1.0.0/BuildButler.exe" download>
   <img src="static/download.png" alt="Download BuildButler" width="100">
 </a>
+
 ---
 
 *BuildButler streamlines Python packaging while ensuring that every executable looks professional and functions seamlessly. Enjoy creating flawless builds with BuildButler!*
