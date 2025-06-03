@@ -125,7 +125,7 @@ This project is released under the **BuildButler Non-Commercial License**.
 ```
 BuildButler Non-Commercial License
 
-Copyright (c) [2025] [Craig Lowe] [Washer]
+Copyright (c) [2025] [Washer]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software (the "Software") and associated documentation files (the "Documentation"), to use, modify, and distribute the Software for non-commercial purposes only, subject to the following conditions:
 
@@ -148,7 +148,7 @@ By using this Software, you agree to these terms.
 
 ## Contact
 
-For any questions, feedback, or support, please contact [Your Name](mailto:your.email@example.com).
+For any questions, feedback, or support, please contact [Washer](mailto:your.email@example.com).
 
 ---
 
