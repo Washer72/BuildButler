@@ -50,7 +50,7 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/buildbutler.git
+   git clone https://github.com/Washer72/buildbutler.git
    cd buildbutler
    ```
 
@@ -88,7 +88,7 @@
    - Copyright details
    - Author
    - Locale  
-   *Note:* The locale combobox is locked during the build process and re-enabled after conversion.
+   *Note:* All buttons and information entered is locked during the build process and re-enabled after conversion.
 
 5. **Build Tab:**
    Click **Start Packaging** to begin the build. The progress bar will animate while PyInstaller processes your script, and when conversion is complete, a completion sound will play and all temporary files will be automatically cleaned up.
