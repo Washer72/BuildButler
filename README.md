@@ -51,7 +51,7 @@
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/buildbutler.git
+   git clone https://github.com/Washer72/buildbutler.git
    cd buildbutler
    ```
 
