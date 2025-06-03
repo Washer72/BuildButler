@@ -19,7 +19,7 @@
   An indeterminate green progress bar indicates build activity, keeping users informed throughout the packaging process.
 
 - **Audio Completion Notification:**  
-  Plays an embedded Base64-encoded WAV audio signal upon successful packaging. Playback is handled in a separate thread so the UI remains responsive.
+  Plays an embedded Base64-encoded WAV audio signal upon successful packaging. Playback occurs in a separate thread, ensuring the UI remains responsive.
 
 - **Comprehensive Cleanup:**  
   Automatically removes all temporary artifacts (such as the PyInstaller spec file, build directory, injected script file, and version info file) along with any extra files created during conversion, leaving only the final executable.
@@ -31,13 +31,13 @@
 - **Python 3.6+**
 
 - **PyInstaller:**  
-  Install via pip:  
+  Install via pip:
   ```bash
   pip install pyinstaller
   ```
 
 - **Pillow (Optional):**  
-  Required if you intend to use ICO files for window icons (to convert ICO to PNG). Install via:  
+  Required if you intend to use ICO files for window icons (to convert ICO to PNG). Install via:
   ```bash
   pip install pillow
   ```
@@ -49,19 +49,16 @@
 ## Installation
 
 1. **Clone the Repository:**
-
    ```bash
-   git clone https://github.com/Washer72/buildbutler.git
+   git clone https://github.com/yourusername/buildbutler.git
    cd buildbutler
    ```
 
 2. **Install Dependencies:**
 
-   Ensure PyInstaller and Pillow (if needed) are installed as described in the prerequisites.
+   Ensure PyInstaller and Pillow (if needed) are installed as described above.
 
 3. **Run BuildButler:**
-
-   Launch the application by running the main Python script:
    ```bash
    python buildbutler.py
    ```
@@ -71,29 +68,36 @@
 ## Usage
 
 1. **Launch the Application:**  
-   Start BuildButler via the script.
+   Start BuildButler by running the main Python script.
 
-2. **Main Tab:**  
+2. **Main Tab:**
    - **Select Python Script:** Choose the Python script you wish to convert.
-   - **Output Folder:** Specify the folder where the final executable should be saved.
-   - **Executable Filename:** Provide a custom filename or leave it blank to use the source file name.
+   - **Output Folder:** Specify the directory where the final executable should be saved.
+   - **Executable Filename:** Provide a custom filename or leave it blank to use the source file’s name.
 
-3. **Resources Tab:**  
-   - **Window Icon:** Browse for an image file (PNG or ICO) to use as the window icon.  
-   - **Executable Icon:** Select an ICO file to serve as the icon for the executable.
+3. **Resources Tab:**
+   - **Window Icon:** Browse for an image file (PNG or ICO) to use as the window icon.
+   - **Executable Icon:** Select an ICO file to serve as the icon for the final executable.
 
-4. **Versioning Tab:**  
-   Enter the version metadata including software name, version number (e.g., 1.0.0.0), company name, a short description, copyright details, author, and locale.  
-   *Note:* The locale combobox is locked during the build process and re-enabled once conversion is complete.
+4. **Versioning Tab:**
+   Enter the version metadata including:
+   - Software name
+   - Version number (e.g., 1.0.0.0)
+   - Company name
+   - A short description
+   - Copyright details
+   - Author
+   - Locale  
+   *Note:* The locale combobox is locked during the build process and re-enabled after conversion.
 
-5. **Build Tab:**  
-   Click **Start Packaging** to begin the build. The progress bar will animate while PyInstaller packages your script. When conversion is complete, a completion sound will play and all temporary files will be automatically cleaned up.
+5. **Build Tab:**
+   Click **Start Packaging** to begin the build. The progress bar will animate while PyInstaller processes your script, and when conversion is complete, a completion sound will play and all temporary files will be automatically cleaned up.
 
 ---
 
 ## Contributing
 
-Contributions are welcome! If you find a bug or have new feature ideas, please follow these steps:
+Contributions are welcome! To report a bug or propose a new feature, please follow these steps:
 
 1. Fork this repository.
 2. Create your feature branch:
@@ -114,7 +118,31 @@ Contributions are welcome! If you find a bug or have new feature ideas, please f
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is released under the **BuildButler Non-Commercial License**.
+
+### BuildButler Non-Commercial License
+
+```
+BuildButler Non-Commercial License
+
+Copyright (c) [Year] [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software (the "Software") and associated documentation files (the "Documentation"), to use, modify, and distribute the Software for non-commercial purposes only, subject to the following conditions:
+
+1. **Non-Commercial Use:**  
+   The Software is provided solely for non-commercial, personal, and educational use. The Software or any derivative works may not be sold, licensed, or otherwise used for commercial gain without the express written consent of the Copyright Holder.
+
+2. **Disclaimer of Warranty:**  
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+3. **Liability:**  
+   The Software is distributed without any guarantees regarding its functionality or suitability for any particular purpose. By using the Software, you agree that the authors are not liable for any corruption, damage, or loss of work files or data that may result from its use.
+
+4. **Attribution:**  
+   Any distribution of the Software, with or without modifications, must include this license text and appropriate attribution to the original author(s).
+
+By using this Software, you agree to these terms.
+```
 
 ---
 
